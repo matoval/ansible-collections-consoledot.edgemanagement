@@ -126,7 +126,7 @@ def main():
         #    postdata["OutputTypes"].append("rhel-edge-installer")
 
         for package in module.params["packages"]:
-            postdata["Packages"].append(
+            postdata["packages"].append(
                 {
                     "name": package,
                 }
